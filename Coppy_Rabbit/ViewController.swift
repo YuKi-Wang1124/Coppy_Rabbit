@@ -18,11 +18,9 @@ class ViewController: UIViewController {
     
     var imageArray = ["87_Points_250x250", "Blue-and-whie_Slippers_250x250", "Bopomofo_250x250", "Bubble_Tea_250x250", "Cheongsam_250x250", "Easycard_250x250", "Foot_Massage_250x250", "Mango_Shaved_Ice_250x250", "Map_of_Taiwan_250x250", "Minced_Pork_Rice_250x250", "Night_Market_250x250", "NTD_250x250", "Pineapple_Cake_250x250", "Rainbow_Heart_250x250", "Spring_Couplet_250x250", "Stinky_Tofu_250x250", "Taipei_101_250x250", "Taiwan_Beer_250x250", "Taiwanese_Temple_250x250", "Tatung_s_Rice_cooker_250x250", "Three-section_Compound_250x250", "Traditional_Chinese_250x250", "Tricolor_Bag_250x250", "Xiaolongbao_250x250"]
     
-    
     var content = NSMutableAttributedString(string: "/>")
     var attachment = NSTextAttachment()
     var index = 0
-    var indexCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +62,6 @@ class ViewController: UIViewController {
                 index = index + 1
             }
         }
-
-        indexCount = indexCount + 1
-        
-        
 
         attachment.image = UIImage(named: imageArray[index])
         attachment.bounds = CGRect(x: 0, y: -18, width: 58, height: 58)
